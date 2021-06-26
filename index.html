@@ -4,16 +4,15 @@
       <meta charset="utf-8" />
       <link rel="stylesheet" href="./style/style.css" />
       <title>Reservia</title>
+      <script src="https://kit.fontawesome.com/0bdd5e4611.js" crossorigin="anonymous"></script>
    </head>   
 <body>
    <div id="bloc_page"> <!-- To separate layout from footer -->
       <header>
          <!-- Header : Logo / nav / inscription -->
          <img src="./images/logo/Reservia.svg" alt="Logo Reservia">
-         <nav>
-            <li></li>
-            <a href="#">Hébergements</a>
-            <li></li>
+         <nav>            
+            <a href="#">Hébergements</a>            
             <a href="#">Activités</a>
          </nav>
          <a href="#">s'incrire</a>
@@ -26,7 +25,7 @@
                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                <p>En plein centre ou en pleine nature</p>
             </div>
-            <div id=serach-bar>
+            <div id=search-bar>
                <i class="fa-solid fa-location-dot"></i>
                <input type="search" id="site-search">
                <button>Recherchez</button>
@@ -55,89 +54,129 @@
             <div id=articles-marseille>
                <h2>Hébergements à Marseille</h2>
                <div id="vignettes">
-                  <div>
+                  <figure>
                      <img src="" alt="">
-                     <h2>Auberge de la Cannebière</h2>
-                     <p>Nuit à partir de €</p>
-                     <i></i>
-                  </div>
-                  <div>
+                     <figcaption>
+                        <h3>Auberge de la Cannebière</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
+                  <figure>
                      <img src="" alt="">
-                     <h2>Hôtel du port</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
-                  <div>
+                     <figcaption>
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
+                  <figure>
                      <img src="" alt="">
-                     <h2>Hôtel Les mouettes</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
-                  <div>
+                     <figcaption>
+                        <h3>Hôtel Les mouettes</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
+                  <figure>
                      <img src="" alt="">
-                     <h2>Hôtel de la mer</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
-                  <div>
-                     <h2>Auberge le pannier</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
-                  <div>
-                     <h2>Hôtel chez Amina</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
+                     <figcaption>
+                        <h3>Hôtel de la mer</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
+                  <figure>
+                     <img src="" alt="">
+                     <figcaption>
+                        <h3>Auberge le pannier</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
+                  <figure>
+                     <img src="" alt="">
+                     <figcaption>
+                        <h3>Hôtel chez Amina</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
                </div>
                <a href="#">Afficher plus</a>
             </div>
-            <!--  Aside : best of elements  : faire un h1 puis iccône ou directement icone qui a un titre ? -->
+            <!--  Aside : best of elements   -->
             <Aside>
                <h2>Les plus populaires</h2>
                <i></i>
                <div id="vignettes">
-                  <div>
+                  <figure>
                      <img src="" alt="">
-                     <h2>Auberge de la Cannebière</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
-                  <div>
-                     <h2>Hôtel du port</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
-                  <div>
-                     <h2>Hôtel Les mouettes</h2>
-                     <p>Nuit à partir de €</p>
-                  </div>
+                     <figcaption>
+                        <h3>Auberge de la Cannebière</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
+                  <figure>
+                     <img src="" alt="">
+                     <figcaption>
+                        <h3>Hôtel du port</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>
+                  <figure>
+                     <img src="" alt="">
+                     <figcaption>
+                        <h3>Hôtel Les mouettes</h3>
+                        <p>Nuit à partir de €</p>
+                        <i class="fa-solid fa-location-dot"></i>
+                     </figcaption>                     
+                  </figure>                  
                </div>
             </Aside>
          </div>
 
-      <!-- Section : Activities in the city -->
+         <!-- Section : Activities in the city -->
          <div id="Activities">
-            <h1>Activités à Marseille</h1>
-            <div id="Activites-list">
-               <div class="Activites-elements">
+            <h2>Activités à Marseille</h2>
+            <div id="Activities-list">
+               <figure>
                   <img src="" alt="">
-                  <p>Vieux Port</p>
-               </div>
-               <div class="Activites-elements">
+                  <figcaption>
+                     <h3>Vieux Port</h3>                     
+                  </figcaption>                     
+               </figure><figure>
                   <img src="" alt="">
-                  <p>Vieux Port</p>
-               </div>
-               <div class="Activites-elements">
+                  <figcaption>
+                     <h3>Fort de Pomègues</h3>                     
+                  </figcaption>                     
+               </figure>
+               <figure>
                   <img src="" alt="">
-                  <p>Vieux Port</p>
-               </div>
-               <div class="Activites-elements">
+                  <figcaption>
+                     <h3>îles du Frioul</h3>                     
+                  </figcaption>                     
+               </figure>
+               <figure>
                   <img src="" alt="">
-                  <p>Vieux Port</p>
-               </div>
-               <div class="Activites-elements">
+                  <figcaption>
+                     <h3>Parc Nationnal des Calanques</h3>                     
+                  </figcaption>                     
+               </figure>
+               <figure>
                   <img src="" alt="">
-                  <p>Vieux Port</p>
-               </div>
-               <div class="Activites-elements">
+                  <figcaption>
+                     <h3>Notre-Dame-de-la-Garde</h3>                     
+                  </figcaption>                     
+               </figure>
+               <figure>
                   <img src="" alt="">
-                  <p>Vieux Port</p>
-               </div>
-
+                  <figcaption>
+                     <h3>Parc Longchamp</h3>                     
+                  </figcaption>                     
+               </figure>
             </div>
          </div>
       </main>
