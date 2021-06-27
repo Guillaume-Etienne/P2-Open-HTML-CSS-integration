@@ -5,6 +5,9 @@ body, button{
 p, header{
     color: #0065FC;
     font-size: 0.9em;
+    }
+p{
+    color:#606060 ;
 }
 #bloc_page{
     padding : 10px;
@@ -83,4 +86,52 @@ button{
     font-weight: bold;
     border: none;
     border-radius: 0 10px 10px 0;
+}
+#filters nav{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#filters nav p{
+    font-weight: bold;
+    color: black;
+}
+#filters nav i{    
+    width: 16px;
+    padding: 15px  15px 15px 15px;
+    margin-left: 40px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+}
+#filters nav button{
+    padding: 10px 25px 10px 30px;
+    font-size: 1em;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-style: solid;
+    border-left: none;
+    border-color: #D9D9D9;
+    border-width: 2px;
+    border-radius: 0 30px 30px 0 ;
+    width: auto;
+    height: 45px;
+}
+#availability{
+    position: relative;
+    margin-bottom: 20px;
+}
+#availability i{
+    position: absolute;
+    top: 14px;
+    color: white;
+    background-color: #0065FC;
+    padding-bottom: 0px;
+}
+#availability p{
+    position: absolute;
+    left: 30px;
+    
+    
 }
