@@ -14,25 +14,23 @@ p, header{
 p{
     color:#606060 ;
 }
+a{                
+    text-decoration: none;
+}
 #bloc_page{
-    padding :20px;
+    padding :50px;
 }
 /*                               Header */
 header{
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
-       
-}
-a{                /*  Correction av Antoine : pourrrait se mettre en a direct .. et se mettrait en haut*/
-    text-decoration: none;
+    position: relative;       
 }
 header nav{
     position: absolute;
     right: 100px;
-    bottom: 20px;
-        
+    bottom: 20px;        
 }
 header nav a:hover{
     border-top: blue;
@@ -50,8 +48,7 @@ header a{
 /*                               section filtre */
 #search{
     display: flex;
-    flex-direction: column;
-        
+    flex-direction: column;        
 }
 #title-search{
     display: flex;
@@ -119,12 +116,10 @@ button{
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
-    z-index: 1;
-    
+    z-index: 1;    
 }
 #filters nav i:nth-child(4){
     width: 14px;
-
 }  
 #filters nav button{
     padding: 10px 25px 10px 30px;
@@ -140,10 +135,10 @@ button{
     height: 45px;
     position:relative;
     margin-left: 50px;
-    
-
 }
-
+#filters nav button:hover{
+    background-color:#D9D9D9;
+}
 #availability{
     display: inline;
     position: relative;
@@ -162,8 +157,6 @@ button{
     position: absolute;
     left: 30px;
 }
-
-
 /*                               section Articles*/
 #articles{
     margin-top: 40px;
@@ -186,6 +179,7 @@ aside figure{
     width: 400px;
     height: 145px;
     display: flex;
+    margin-right: 40px;
 }
 aside figure img{
     height:auto ;
@@ -217,16 +211,16 @@ aside figcaption i:nth-child(8){
 #articles-marseille a{
     font-size: 1em;
     font-weight: bold;
-    color: black;
-    
+    color: black;    
 }
 figure{
     width: 250px;
     height: 196px;
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 2em lightgrey;
+    box-shadow: 0 0 1em #D9D9D9;
     padding: 5px;
+    margin-right: 0;
 }
 figure img{
     height: 110px;
@@ -252,9 +246,53 @@ figcaption i:nth-child(7){
     font-size: 0.8em;
     color: #D9D9D9;    
 }
+/*                               Activities */
+#Activities{
+    margin-top: 60px;
+}
+#Activities-list{    
+    margin: -15px 0 0 -40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Activities-list figure{
+    width: 300px;
+    height: 160px;    
+    padding: 0;
+    margin: 20px;
+}
+
+/*                               Activities Séparations spécifiques au Desktop*/
+#Activities-list figure:nth-child(2n+1){
+    height: 440px;      
+}
+#Activities-list figure:nth-child(2n+1) img{
+    height: 390px;
+}
+
+.coupledefigures{
+    display: flex;
+    flex-direction: column;
+}
+#Activities-list .coupledefigures figure:nth-child(1){
+    height: 240px;     
+}   
+#Activities-list .coupledefigures figure:nth-child(1) img{
+    height: 190px;
+}
 /*                               footer */
 footer{    
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;     
+}
+.footer-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 25px 0 0 -170px;
+    color: black;  
+}
+.footer-element a{
+    margin-bottom: 12px;
 }
