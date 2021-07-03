@@ -25,7 +25,7 @@ header{
     position: relative;
        
 }
-header nav a, header a{                /*  Correction av Antoine : pourrrait se mettre en a direct .. et se mettrait en haut*/
+a{                /*  Correction av Antoine : pourrrait se mettre en a direct .. et se mettrait en haut*/
     text-decoration: none;
 }
 header nav{
@@ -167,28 +167,58 @@ button{
 /*                               section Articles*/
 #articles{
     margin-top: 40px;
-    display: flex;
-    justify-content:start;
-
-      
+    display: flex;         
 }
-#articles-marseille, aside{
-    padding-left: 25px;
-    padding-top: 20px;
+/*                               section Articles - Aside */
+#articles-marseille, aside{    
+    padding : 20px 0 20px 40px;
     background-color: #F2F2F2;
-    border-radius: 20px;     
+    border-radius: 20px;         
 }
-
-#articles-marseille{
-   margin-right: 40px;
-   flex: 1;
+aside{
+    min-width: 410px;
+    max-width: 410px;
 }
-
-#vignettes{
-    width: 350px;
+aside h2 i{
+    margin-left: 100px;
+}
+aside figure{
+    width: 400px;
+    height: 145px;
     display: flex;
+}
+aside figure img{
+    height:auto ;
+    width:130px; 
+    object-fit:cover;   
+    border-radius: 15px 0 0 15px;
+}
+aside figcaption{
+    margin-left: 20px;
+    line-height: 1.4em;
+    font-size: 0.9em;
+    padding-left: 8px;
+}
+aside figcaption p{
+    margin-top: -15px;
+}
+aside figcaption i:nth-child(8){
+    color: #D9D9D9;    
+}
+#articles-marseille{
+   margin-right: 40px;   
+}
+/*                               section Articles - Marseille*/
+#vignettes{    
+    margin: -15px 0 0 -40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#articles-marseille a{
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
     
-    flex-wrap:wrap;
 }
 figure{
     width: 250px;
@@ -207,7 +237,11 @@ figure img{
 figcaption{
     line-height: 0.2em;
     font-size: 0.9em;
-    padding-left: 7px;
+    padding-left: 8px;
+}
+figcaption h3{
+    font-size: 1.1em;
+    margin-bottom: 18px;
 }
 figcaption i{
     margin-right: 1px;
