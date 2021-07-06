@@ -6,6 +6,7 @@
 body{
     margin: 0;
     padding: 0;
+    max-width: 1470px;
 }
 p, header{
     color: #0065FC;
@@ -102,6 +103,7 @@ button{
     display: flex;
     margin-top: 30px;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 #filters nav p{
     font-weight: bold;
@@ -251,7 +253,7 @@ figcaption i:nth-child(7){
     margin-top: 60px;
 }
 #Activities-list{    
-    margin: -15px 0 0 -40px;
+    margin: -5px 0 0 -1px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -260,6 +262,9 @@ figcaption i:nth-child(7){
     height: 160px;    
     padding: 0;
     margin: 20px;
+}
+#Activities-list figcaption{
+    padding : 5px 0 0 15px;
 }
 
 /*                               Activities Séparations spécifiques au Desktop*/
@@ -295,4 +300,16 @@ footer{
 }
 .footer-element a{
     margin-bottom: 12px;
+}
+/*     Break Point Mobile */
+@media screen and (max-width: 1280px)
+{   
+    footer{    
+        display: flex;
+        flex-direction: column;           
+    }
+    .footer-element{
+        margin: 0 0 0 30px;
+        
+    }
 }
