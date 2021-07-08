@@ -8,20 +8,22 @@ body{
     margin: 0;
     padding: 0;
     max-width: 1470px;
-    align-content: center;
+    margin:auto;
 }
 p, header{
     color: #0065FC;
     font-size: 1em;
 }
 p{
-    color:#606060 ;
+    color:#606060;
 }
 a{                
     text-decoration: none;
 }
 #bloc_page{
-    padding : 3px 0 0 3%;
+    width:95%;
+    margin:auto;
+    margin-bottom:20px;
 }
 /*                               Header */
 header{
@@ -255,15 +257,19 @@ figcaption i:nth-child(7){
     margin-top: 60px;
 }
 #Activities-list{    
-    margin: -5px 0 0 -1px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;;
 }
-#Activities-list figure{
-    width: 300px;
+#Activities-list > figure{
+    width: 23%;
     height: 160px;    
     padding: 0;
-    margin: 20px;
+}
+
+#Activities-list figure{
+    padding:0;
+    margin:0;
 }
 #Activities-list figcaption{
     padding : 5px 0 0 15px;
@@ -279,7 +285,12 @@ figcaption i:nth-child(7){
 
 .coupledefigures{
     display: flex;
+    width:23%;
     flex-direction: column;
+}
+
+.coupledefigures figure{
+    width:100%;
 }
 #Activities-list .coupledefigures figure:nth-child(1){
     height: 240px;     
@@ -288,16 +299,18 @@ figcaption i:nth-child(7){
     height: 190px;
 }
 /*                               footer */
-footer{    
+footer[role="contentinfo"]{    
     background-color: #F2F2F2;
     display: flex;
-    justify-content:space-around;     
+    width:100%;
+    padding-left: 2.5%;
+    padding-right:2.5%;
+    justify-content:space-between;     
 }
 .footer-element{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin: 25px 0 0 -170px;
     color: black;  
 }
 .footer-element a{
