@@ -27,6 +27,7 @@ a{
 }
 /*                               Header */
 header{
+    margin-top: 2px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -35,11 +36,10 @@ header{
 header nav{
     position: absolute;
     right: 100px;
-    bottom: 20px;        
+    bottom: 20px;         
 }
 header nav a:hover{
-    border-top: blue;
-    border-top-style: solid;
+    border-top : 2px solid #0065FC;
 }
 header nav a{
     padding: 20px;
@@ -112,9 +112,9 @@ button{
 #filters nav p{
     font-weight: bold;
     color: black;
-    margin-right: 30px;
+    margin-right: 30px;    
 }
-#filters nav button i{    
+#filters nav button i{
     width: 45px;
     height: 45px;
     padding: 15px  15px 15px 15px;
@@ -255,21 +255,21 @@ figcaption i:nth-child(7){
 /*                               Activities */
 #Activities{
     margin-top: 60px;
+    margin-bottom: 60px;
 }
 #Activities-list{    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;;
+    justify-content: space-between;
 }
 #Activities-list > figure{
     width: 23%;
     height: 160px;    
     padding: 0;
 }
-
 #Activities-list figure{
     padding:0;
-    margin:0;
+    margin:40px 0 0 0;
 }
 #Activities-list figcaption{
     padding : 5px 0 0 15px;
@@ -277,10 +277,14 @@ figcaption i:nth-child(7){
 
 /*                               Activities Séparations spécifiques au Desktop*/
 #Activities-list figure:nth-child(2n+1){
-    height: 440px;      
+    height: 440px;
 }
 #Activities-list figure:nth-child(2n+1) img{
-    height: 390px;
+    height: 390px;    
+}
+
+#Activities-list figure:nth-child(2){
+    height: 160px;    
 }
 
 .coupledefigures{
@@ -305,22 +309,25 @@ footer[role="contentinfo"]{
     width:100%;
     padding-left: 2.5%;
     padding-right:2.5%;
-    justify-content:space-between;     
+    justify-content:flex-start ;
+    
 }
 .footer-element{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    color: black;  
+    color: black;   
+    padding-right: 18%;  
 }
 .footer-element a{
     margin-bottom: 12px;
 }
-/*     Break Point Mobile */
+/*     Break Point Mobile               Selon bootstrap :  576   768   */
 @media screen and (max-width: 576px)
 {   
     #bloc_page{
         padding : 0;
+        width: 100%;
     }
     
     header{
@@ -330,16 +337,19 @@ footer[role="contentinfo"]{
         flex-wrap: wrap;             
     }
     header nav{
+        width: 100%;
+        position: absolute;
+        right: auto;
+        bottom: auto;
+        margin-top: 110px; 
         display: flex;
-        justify-content: space-around;
-        order : 1;
-        left: 1px;
-        top : 50px
+        justify-content: space-around;             
     }  
     
     header nav a{
-       margin: 10px;
+       
        padding: 10px;
+
     }
     header a{
         right: 10px;
@@ -347,13 +357,72 @@ footer[role="contentinfo"]{
     header img{
         margin: 20px 50px 20px 20px;
     }
-   
+    header nav a{
+        width: 50%;
+        border-bottom: #D9D9D9;
+        border-bottom-style: solid;
+        text-align: center;
+    }
     header nav a:hover{
         border-top:none;
         border-bottom: #0065FC;
         border-bottom-style: solid;
     }
-   
+    #search{
+        margin : 40px 0 0 20px;
+    }
+    #search-bar{
+        width: 348px;
+    }
+    #site-search{
+        width: auto;     
+    }
+    #search-bar button{
+        width: 48px;
+        height: 48px;
+        border-radius: 13px;
+        font-size: 1.05em;        
+    }
+    #filters nav{
+        display:block;  
+        margin: 10px;
+
+    }
+    #filters nav button{
+        margin: 10px;
+    }
+    #articles{
+        margin-top: 40px;
+        display: flex; 
+        flex-direction: column-reverse;        
+    }
+    #articles-marseille, aside{    
+        padding : 20px 0 20px 40px;
+        border : 0;
+        background-color: #F2F2F2;
+        border-radius: 0;         
+    }
+    aside{
+        min-width: 100%;
+        max-width: auto;
+    }
+    figure{
+        width: 400px;
+        height: 196px;
+        padding: 5px;
+        margin-right: 0;
+    }
+    figure img{
+        height: 110px;
+        width:100%; 
+        object-fit:cover;   
+        border-radius: 15px 15px 0 0;
+    }
+    #articles-marseille{    
+        padding : 20px 0 20px 40px;
+        background-color: white;
+        border-radius: 20px;             
+    }
     footer{    
         display: flex;
         flex-direction: column;           
