@@ -368,6 +368,7 @@ footer[role="contentinfo"]{
         border-bottom: #0065FC;
         border-bottom-style: solid;
     }
+    /*                              Search Mobile                 */
     #search{
         margin : 40px 0 0 20px;
     }
@@ -391,6 +392,7 @@ footer[role="contentinfo"]{
     #filters nav button{
         margin: 10px;
     }
+    /*                              Arcticles Mobile                 */
     #articles{
         margin-top: 40px;
         display: flex; 
@@ -422,6 +424,16 @@ footer[role="contentinfo"]{
         padding : 20px 0 20px 40px;
         background-color: white;
         border-radius: 20px;             
+    }
+    /*                              Activités Mobile                 */
+    #Activities{
+        margin : 30px 15px 60px 15px;         
+    }
+    #Activities-list{    
+        flex-direction: column;        
+    }
+    #Activities-list > figure{
+        width: 95%;         
     }
     footer{    
         display: flex;
