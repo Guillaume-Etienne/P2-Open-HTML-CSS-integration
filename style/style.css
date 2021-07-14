@@ -111,27 +111,30 @@ button{
     margin-top: 30px;
     margin-bottom: 10px;
     flex-wrap: wrap;
+    position: relative;
 }
 #filters nav p{
     font-weight: bold;
     color: black;
-    margin-right: 30px;    
+    margin-right: 30px;
+        
 }
 #filters nav button i{
     width: 45px;
     height: 45px;
-    padding: 15px  15px 15px 15px;
-    margin: -12px 0 0 -50px;
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 100%;
-    z-index: 1;    
+    z-index: 1;   
+    position: absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -28px;
+    top: -2px;    
 }
-#filters nav i:nth-child(4){
-    width: 14px;
-}  
 #filters nav button{
-    padding: 10px 25px 10px 30px;
+    /*padding: 10px 25px 10px 40px; */
     font-size: 1em;
     background-color: white;
     color: black;    
@@ -143,7 +146,8 @@ button{
     width: auto;
     height: 45px;
     position:relative;
-    margin-left: 50px;
+    margin-left: 50px; 
+    padding: 0 20px 0 30px;   
 }
 #filters nav button:hover{
     background-color:#D9D9D9;
@@ -257,8 +261,7 @@ figcaption i:nth-child(7){
 }
 /*                               Activities */
 #Activities{
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0 60px 0;
 }
 #Activities-list{    
     display: flex;
@@ -279,31 +282,52 @@ figcaption i:nth-child(7){
 }
 
 /*                               Activities Séparations spécifiques au Desktop*/
-#Activities-list figure:nth-child(2n+1){
-    height: 440px;
-}
-#Activities-list figure:nth-child(2n+1) img{
-    height: 390px;    
-}
+@media screen and (min-width: 900px)
+{
+   
+    #Activities-list figure:nth-child(2n+1) img{
+        height: 390px;    
+    }
 
-#Activities-list figure:nth-child(2){
-    height: 160px;    
-}
+    #Activities-list figure:nth-child(2){
+        height: 160px;           
+    }
+    #fignotre{
+        background-color: red;
+        height: 250px;           
+    }
+    #fignotre img{
+        height: 20px;
+    }
+    #figparc{
+        background-color: blue;
+        height: 40px;             
+    }
 
-.coupledefigures{
-    display: flex;
-    width:23%;
-    flex-direction: column;
-}
+    .coupledefigures{
+        display: flex;
+        width:23%;
+        flex-direction: column;
+    }
 
-.coupledefigures figure{
-    width:100%;
-}
-#Activities-list .coupledefigures figure:nth-child(1){
-    height: 240px;     
-}   
-#Activities-list .coupledefigures figure:nth-child(1) img{
-    height: 190px;
+    .coupledefigures figure{
+        width:100%;
+    }
+    #figfort{
+        height: 240px;
+        background-color: grey;        
+    } 
+    #figfortimg{
+        height: 10px;
+        width: fit-content;
+    }   
+    #Activities-list .coupledefigures figure:nth-child(1) img{
+        height: 190px;
+        
+    }
+    #figiles{
+        background-color: ;
+    }
 }
 /*                               footer */
 footer[role="contentinfo"]{    
@@ -399,11 +423,11 @@ footer[role="contentinfo"]{
     }
     #filters nav{
         display:block;  
-        margin: 10px;
+        margin: 0 10px 0 10px;
 
     }
     #filters nav button{
-        margin: 10px;        
+        margin: 0 18px 12px 25px;        
     }
     /*                              Arcticles Mobile                 */
     #articles{
@@ -445,9 +469,10 @@ footer[role="contentinfo"]{
     #Activities-list{    
         flex-direction: column;        
     }
-    #Activities-list > figure{
+    #Activities-list  figure{
         width: 95%;         
     }
+    /*                              Footer Mobile                 */
     footer{    
         display: flex;
         flex-direction: column;           

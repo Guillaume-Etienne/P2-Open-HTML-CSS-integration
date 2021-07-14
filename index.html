@@ -31,18 +31,15 @@
             <div id="search-bar">
                <i class="fas fa-map-marker-alt"></i>               
                <input type="search" id="site-search" value="Marseille, France">
-               <button><span>Rechercher</span><i class="fas fa-search"></i></button>
-                              
-               <!--
-               <button><i class="fas fa-map-marker-alt"></i><input type="search" id="site-search" value="Marseille, France">Rechercher</button>-->
+               <button><span>Rechercher</span><i class="fas fa-search"></i></button>               
             </div>            
             <div id="filters">
                <nav>
                   <p>Filtres</p>
                   <button><i class="fas fa-money-bill-wave"></i>Economique</button>                  
-                  <button><i class="fas fa-child"></i>Familial</button>                  
+                  <button><i id="butfam" class="fas fa-child"></i>Familial</button>                  
                   <button><i class="fas fa-heart"></i>Romantique</button>                  
-                  <button><i class="fas fa-dog"></i>Animaux autorisés</button>
+                  <button><i id="butam" class="fas fa-dog"></i>Animaux autorisés</button>
                </nav>
             </div>
             <footer id="availability">
@@ -154,13 +151,13 @@
                   </figcaption>                     
                </figure>
                <div class="coupledefigures">
-                  <figure>
-                     <img src="images/activites/4_small/Fort-Pomegue.jpg" alt="Fort de Pomègues">
+                  <figure id="figfort">
+                     <img id="figfortimg" src="images/activites/4_small/Fort-Pomegue.jpg" alt="Fort de Pomègues">
                      <figcaption>
                         <h3>Fort de Pomègues</h3>                     
                      </figcaption>                     
                   </figure>
-                  <figure>
+                  <figure id="figiles">
                      <img src="images/activites/4_small/Iles.jpg" alt="îles du Frioul">
                      <figcaption>
                         <h3>îles du Frioul</h3>                     
@@ -174,13 +171,13 @@
                   </figcaption>                     
                </figure>
                <div class="coupledefigures">
-                  <figure>
+                  <figure id="fignotre">
                      <img src="images/activites/4_small/Notre-dame.jpg" alt="Notre-Dame-de-la-Garde">
                      <figcaption>
                         <h3>Notre-Dame-de-la-Garde</h3>                     
                      </figcaption>                     
                   </figure>
-                  <figure>
+                  <figure id="figparc">
                      <img src="images/activites/4_small/Parc-Longchamp.jpg" alt="Parc Longchamp">
                      <figcaption>
                         <h3>Parc Longchamp</h3>                     
