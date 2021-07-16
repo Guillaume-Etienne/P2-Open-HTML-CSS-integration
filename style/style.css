@@ -8,6 +8,7 @@ body{
     margin: 0;
     padding: 0;
     max-width: 1470px;
+    min-width: 400px;
     margin:auto;
 }
 p, header{
@@ -270,7 +271,7 @@ figcaption i:nth-child(7){
 }
 #Activities-list > figure{
     width: 23%;
-    height: 160px;    
+    height: auto;    
     padding: 0;
 }
 #Activities-list figure{
@@ -322,12 +323,9 @@ figcaption i:nth-child(7){
         width: fit-content;
     }   
     #Activities-list .coupledefigures figure:nth-child(1) img{
-        height: 190px;
-        
+        height: 190px;        
     }
-    #figiles{
-        background-color: ;
-    }
+  
 }
 /*                               footer */
 footer[role="contentinfo"]{    
@@ -400,27 +398,44 @@ footer[role="contentinfo"]{
         margin : 40px 0 0 20px;
     }
     #search-bar{
-        width: 348px;        
+        width: auto;  
+        border: none;      
     }
     #site-search{
-        width: auto;     
+        width: auto;         
+        border-top: 1px solid #f2f2f2; 
+        border-bottom: 1px solid #F2F2F2; 
+        height: 48px;
+    }
+    #search-bar i{
+        border-top: 1px solid #f2f2f2; 
+        border-bottom: 1px solid #F2F2F2; 
+        height: 48px;
     }
     #search-bar button{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         width: 48px;
         height: 48px;
         border-radius: 13px;
-        font-size: 1.05em;                
+        font-size: 1.05em;
+        background-color: #0065FC;
+        margin-left: -15px;               
     }
     #search-bar span {         
         display: none;             
     }
     #search-bar button i{
         display: block;
-        width: 60px;
-        background-color: #0065FC;
-        border-radius: 10px;
-        margin: -2px 0 0 -8px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #0065FC;        
     }
+
     #filters nav{
         display:block;  
         margin: 0 10px 0 10px;
@@ -447,7 +462,7 @@ footer[role="contentinfo"]{
     }
     figure{
         width: 400px;
-        height: 196px;
+        height: 168px;
         padding: 5px;
         margin-right: 0;
     }
