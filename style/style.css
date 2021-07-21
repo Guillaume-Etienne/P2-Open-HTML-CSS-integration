@@ -74,7 +74,7 @@ h1{
 #search-bar{
     width: 440px;
     height: 50px;
-    border-style: solid;     /*  Antoine : on pourrait résumer tous ces border en 1 */
+    border-style: solid;     
     border-width: 1px;
     border-radius: 13px;
     border-color: #F2F2F2;
@@ -135,7 +135,6 @@ button{
     top: -2px;    
 }
 #filters nav button{
-    /*padding: 10px 25px 10px 40px; */
     font-size: 1em;
     background-color: white;
     color: black;    
@@ -271,7 +270,7 @@ figcaption i:nth-child(7){
 }
 #Activities-list > figure{
     width: 23%;
-    height: auto;    
+    /*height: auto*/;    
     padding: 0;
 }
 #Activities-list figure{
@@ -284,14 +283,13 @@ figcaption i:nth-child(7){
 
 /*                               Activities Séparations spécifiques au Desktop*/
 @media screen and (min-width: 900px)
-{
-   
+{   
     #Activities-list figure:nth-child(2n+1) img{
-        height: 390px;    
+        height: 390px;  
     }
 
-    #Activities-list figure:nth-child(2){
-        height: 160px;           
+    #figvieux, #figparc{
+        height: 445px;          
     }
     #fignotre{
         background-color: red;
@@ -300,11 +298,6 @@ figcaption i:nth-child(7){
     #fignotre img{
         height: 20px;
     }
-    #figparc{
-        background-color: blue;
-        height: 40px;             
-    }
-
     .coupledefigures{
         display: flex;
         width:23%;
@@ -314,8 +307,8 @@ figcaption i:nth-child(7){
     .coupledefigures figure{
         width:100%;
     }
-    #figfort{
-        height: 240px;
+    #figfort, #figparc{
+        height: 245px;
         background-color: grey;        
     } 
     #figfortimg{
@@ -325,6 +318,10 @@ figcaption i:nth-child(7){
     #Activities-list .coupledefigures figure:nth-child(1) img{
         height: 190px;        
     }
+    #figiles{
+        height: 240px;
+        background-color: grey;        
+    } 
   
 }
 /*                               footer */
