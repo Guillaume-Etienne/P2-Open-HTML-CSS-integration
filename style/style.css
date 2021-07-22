@@ -20,6 +20,7 @@ p{
 }
 a{                
     text-decoration: none;
+    color: #0065FC;
 }
 #bloc_page{
     width:95%;
@@ -282,7 +283,7 @@ figcaption i:nth-child(7){
 }
 
 /*                               Activities Séparations spécifiques au Desktop*/
-@media screen and (min-width: 900px)
+@media screen and (min-width: 1150px)
 {     
     #figvieux, #figparc{
         height: 445px;        
@@ -332,6 +333,66 @@ footer[role="contentinfo"]{
 }
 .footer-element a{
     margin-bottom: 12px;
+    color: black;
+}
+/*     Break Point Tablette               */
+@media screen and (max-width: 1150px)
+{
+    /*                              Arcticles Tablette                 */
+    #articles{
+        margin-top: 40px;
+        display: flex; 
+        flex-direction: column-reverse;        
+    }
+    #articles-marseille, aside{    
+        padding : 20px 0 10px 20px;
+        border : 0;
+        background-color: #F2F2F2;
+        border-radius: 0;         
+    }
+    aside{
+        min-width: 100%;
+        max-width: auto;
+    }
+    #articles-marseille #vignettes figure{
+        width: 400px;
+        height: 195px;
+        padding: 1px;
+        margin-right: 0;
+    }
+    figure img{
+        height: 110px;
+        width:100%; 
+        object-fit:cover;   
+        border-radius: 15px 15px 0 0;
+    }
+    #articles-marseille{    
+        padding : 10px 0 10px 20px;
+        background-color: white;
+        border-radius: 20px;             
+    }
+    /*                              Activités Tablette                 */
+    #Activities{
+        margin : 10px 15px 60px 15px;         
+    }
+    #Activities-list{    
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;        
+    }
+    #Activities-list  figure{
+        width: 50%;
+        height: 160px;         
+    }
+    .coupledefigures{
+        display: flex;
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .coupledefigures figure{
+        width:100%;
+    }
 }
 /*     Break Point Mobile               Selon bootstrap :  576   768   */
 @media screen and (max-width: 576px)
