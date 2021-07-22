@@ -283,45 +283,34 @@ figcaption i:nth-child(7){
 
 /*                               Activities Séparations spécifiques au Desktop*/
 @media screen and (min-width: 900px)
-{   
-    #Activities-list figure:nth-child(2n+1) img{
-        height: 390px;  
-    }
-
+{     
     #figvieux, #figparc{
-        height: 445px;          
+        height: 445px;        
     }
-    #fignotre{
-        background-color: red;
-        height: 250px;           
-    }
-    #fignotre img{
-        height: 20px;
+    #figvieux img, #figparc img{
+        height: 390px;        
     }
     .coupledefigures{
         display: flex;
         width:23%;
         flex-direction: column;
     }
-
     .coupledefigures figure{
         width:100%;
     }
-    #figfort, #figparc{
+    #figfort, #figparclong{
         height: 245px;
-        background-color: grey;        
-    } 
-    #figfortimg{
-        height: 10px;
-        width: fit-content;
-    }   
-    #Activities-list .coupledefigures figure:nth-child(1) img{
-        height: 190px;        
     }
-    #figiles{
-        height: 240px;
-        background-color: grey;        
+    #figfort img, #figparclong img{
+        height: 190px;              
+    }
+    #figiles, #fignotre{
+        height: 161px;              
     } 
+    #figiles img, #fignotre img{
+        height: 105px;              
+    } 
+  
   
 }
 /*                               footer */
@@ -368,10 +357,8 @@ footer[role="contentinfo"]{
         justify-content: space-around;             
     }  
     
-    header nav a{
-       
+    header nav a{       
        padding: 10px;
-
     }
     header a{
         right: 10px;
@@ -448,7 +435,7 @@ footer[role="contentinfo"]{
         flex-direction: column-reverse;        
     }
     #articles-marseille, aside{    
-        padding : 20px 0 20px 40px;
+        padding : 20px 0 10px 20px;
         border : 0;
         background-color: #F2F2F2;
         border-radius: 0;         
@@ -457,10 +444,10 @@ footer[role="contentinfo"]{
         min-width: 100%;
         max-width: auto;
     }
-    figure{
+    #articles-marseille #vignettes figure{
         width: 400px;
-        height: 168px;
-        padding: 5px;
+        height: 195px;
+        padding: 1px;
         margin-right: 0;
     }
     figure img{
@@ -470,19 +457,20 @@ footer[role="contentinfo"]{
         border-radius: 15px 15px 0 0;
     }
     #articles-marseille{    
-        padding : 20px 0 20px 40px;
+        padding : 10px 0 10px 20px;
         background-color: white;
         border-radius: 20px;             
     }
     /*                              Activités Mobile                 */
     #Activities{
-        margin : 30px 15px 60px 15px;         
+        margin : 10px 15px 60px 15px;         
     }
     #Activities-list{    
         flex-direction: column;        
     }
     #Activities-list  figure{
-        width: 95%;         
+        width: 95%;
+        height: 160px;         
     }
     /*                              Footer Mobile                 */
     footer{    
