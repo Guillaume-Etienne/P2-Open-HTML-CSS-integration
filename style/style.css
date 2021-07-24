@@ -339,6 +339,9 @@ footer[role="contentinfo"]{
 @media screen and (max-width: 1150px)
 {
     /*                              Arcticles Tablette                 */
+    #vignettes{
+        justify-content: center;
+    }
     #articles{
         margin-top: 40px;
         display: flex; 
@@ -381,7 +384,7 @@ footer[role="contentinfo"]{
         flex-wrap: wrap;        
     }
     #Activities-list  figure{
-        width: 50%;
+        width: 70%;
         height: 160px;         
     }
     .coupledefigures{
@@ -506,10 +509,10 @@ footer[role="contentinfo"]{
         max-width: auto;
     }
     #articles-marseille #vignettes figure{
-        width: 400px;
+        width: 380px;
         height: 195px;
         padding: 1px;
-        margin-right: 0;
+        margin-right: 10px;
     }
     figure img{
         height: 110px;
