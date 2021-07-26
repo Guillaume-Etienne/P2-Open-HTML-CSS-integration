@@ -217,7 +217,7 @@ aside figcaption i:nth-child(8){
    margin-right: 40px;   
 }
 /*                               section Articles - Marseille*/
-#vignettes{    
+.vignettes{    
     margin: -15px 0 0 -40px;
     display: flex;
     flex-wrap: wrap;
@@ -315,7 +315,7 @@ figcaption i:nth-child(7){
   
 }
 /*                               footer */
-footer[role="contentinfo"]{    
+body > footer{    
     background-color: #F2F2F2;
     display: flex;
     width:100%;
@@ -339,7 +339,7 @@ footer[role="contentinfo"]{
 @media screen and (max-width: 1150px)
 {
     /*                              Arcticles Tablette                 */
-    #vignettes{
+    .vignettes{
         justify-content: center;
     }
     #articles{
@@ -357,7 +357,7 @@ footer[role="contentinfo"]{
         min-width: 100%;
         max-width: auto;
     }
-    #articles-marseille #vignettes figure{
+    #articles-marseille .vignettes figure{
         width: 400px;
         height: 195px;
         padding: 1px;
@@ -508,7 +508,7 @@ footer[role="contentinfo"]{
         min-width: 100%;
         max-width: auto;
     }
-    #articles-marseille #vignettes figure{
+    #articles-marseille .vignettes figure{
         width: 380px;
         height: 195px;
         padding: 1px;
