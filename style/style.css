@@ -355,7 +355,7 @@ body > footer{
     }
     aside{
         min-width: 100%;
-        max-width: auto;
+        max-width: none;
     }
     #articles-marseille .vignettes figure{
         width: 400px;
@@ -506,7 +506,7 @@ body > footer{
     }
     aside{
         min-width: 100%;
-        max-width: auto;
+        max-width: none;
     }
     #articles-marseille .vignettes figure{
         width: 380px;
@@ -523,7 +523,8 @@ body > footer{
     #articles-marseille{    
         padding : 10px 0 10px 20px;
         background-color: white;
-        border-radius: 20px;             
+        border-radius: 20px;  
+        margin-right: 20px;           
     }
     /*                              Activités Mobile                 */
     #Activities{
@@ -535,6 +536,9 @@ body > footer{
     #Activities-list  figure{
         width: 95%;
         height: 160px;         
+    }
+    .coupledefigures{
+        align-items:baseline ;
     }
     /*                              Footer Mobile                 */
     footer{    
