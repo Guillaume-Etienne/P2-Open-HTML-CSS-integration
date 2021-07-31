@@ -538,7 +538,7 @@ body > footer{
         height: 160px;         
     }
     .coupledefigures{
-        align-items:baseline ;
+        align-items:flex-start ;
     }
     /*                              Footer Mobile                 */
     footer{    
